@@ -20,7 +20,6 @@ const OtpInput = ({ length, onOtpSubmit }) => {
     // submit OTP
     // when all fields are filled
     const combinedOtpValue = newOtp.join('');
-    console.log('[D]', combinedOtpValue);
     if(combinedOtpValue.length === length) {
       onOtpSubmit(combinedOtpValue);
     }
